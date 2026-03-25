@@ -1,67 +1,168 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>I write</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I write — Yan Xiao</title>
 
-<style>
-body {
-  margin: 0;
-  background: black;
-  color: white;
-  font-family: Helvetica, Arial, sans-serif;
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: Helvetica, Arial, sans-serif;
+      background: black;
+      color: white;
+    }
 
-.container {
-  max-width: 800px;
-  margin: 120px auto;
-  padding: 0 20px;
-}
+    .header {
+      width: 100%;
+      background: black;
+      display: flex;
+      align-items: flex-start;
+      padding: 22px 32px 18px 32px;
+      box-sizing: border-box;
+      gap: 24px;
+    }
 
-.work {
-  margin-bottom: 80px;
-}
+    .site-name {
+      font-size: 1.1rem;
+      letter-spacing: 0.5px;
+      opacity: 0.95;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
 
-.title {
-  font-size: 1.6rem;
-  line-height: 1.4;
-  margin-bottom: 12px;
-}
+    .site-name a {
+      color: white;
+      text-decoration: none;
+    }
 
-.meta {
-  font-size: 0.95rem;
-  opacity: 0.6;
-}
+    .nav {
+      display: flex;
+      gap: 28px;
+      margin-left: 60px;
+    }
 
-</style>
+    .nav a {
+      text-decoration: none;
+      color: white;
+      font-size: 0.95rem;
+      opacity: 0.78;
+      transition: opacity 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .nav a:hover {
+      opacity: 1;
+    }
+
+    .nav a.active {
+      opacity: 1;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      padding-bottom: 1px;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 80px auto 140px;
+      padding: 0 32px;
+    }
+
+    .section-label {
+      font-size: 0.75rem;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      opacity: 0.35;
+      margin-bottom: 52px;
+    }
+
+    .work {
+      margin-bottom: 52px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 36px;
+    }
+
+    .work-title {
+      font-size: 1.05rem;
+      font-weight: 400;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .work-title a {
+      color: white;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+      padding-bottom: 1px;
+      transition: opacity 0.2s ease, border-color 0.2s ease;
+    }
+
+    .work-title a:hover {
+      opacity: 0.7;
+      border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .meta {
+      font-size: 0.85rem;
+      opacity: 0.42;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 680px) {
+      .header {
+        flex-direction: column;
+        padding: 18px 20px 14px 20px;
+      }
+
+      .nav {
+        margin-left: 0;
+        flex-wrap: wrap;
+        gap: 14px 20px;
+      }
+
+      .container {
+        margin: 52px auto 100px;
+        padding: 0 20px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="container">
-
-<div class="work">
-  <div class="title">
-    Contextual Creativity and Desirable Autonomy of Humans and AI in the Arts: A Comparative Interpretation with a Focus on Visual Art and Music
+  <div class="header">
+    <div class="site-name"><a href="index.html">Yan Xiao</a></div>
+    <div class="nav">
+      <a href="me.html">Me, Myself and I</a>
+      <a href="write.html" class="active">I write</a>
+      <a href="think.html">I think</a>
+      <a href="teach.html">I teach</a>
+      <a href="connect.html">I connect</a>
+    </div>
   </div>
 
-  <div class="meta">
-    Art Style, Art & Culture International Magazine, 17(17), 145–170 (2026)
+  <div class="container">
+
+    <div class="section-label">I write</div>
+
+    <div class="work">
+      <div class="work-title">
+        <a href="https://zenodo.org/records/18880247" target="_blank" rel="noopener">
+          Contextual Creativity and Desirable Autonomy of Humans and AI in the Arts: A Comparative Interpretation with a Focus on Visual Art and Music
+        </a>
+      </div>
+      <div class="meta">Art Style, Art &amp; Culture International Magazine, 17(17), 145–170 (2026)</div>
+    </div>
+
+    <div class="work">
+      <div class="work-title">
+        <a href="https://ieeexplore.ieee.org/document/11269625" target="_blank" rel="noopener">
+          How Authorship Labels Shape Perceptions, Attribution Judgments, and Willingness to Pay for AI-Human Co-Created Music
+        </a>
+      </div>
+      <div class="meta">IEEE International Symposium on Technology and Society (ISTAS), 2025</div>
+    </div>
+
   </div>
-</div>
-
-
-<div class="work">
-  <div class="title">
-    How Authorship Labels Shape Perceptions, Attribution Judgments, and Willingness to Pay for AI-Human Co-Created Music
-  </div>
-
-  <div class="meta">
-    IEEE International Symposium on Technology and Society (ISTAS), 2025
-  </div>
-</div>
-
-</div>
 
 </body>
 </html>
