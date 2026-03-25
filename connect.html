@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I connect — Yan Xiao</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Helvetica, Arial, sans-serif;
+      background: black;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header {
+      width: 100%;
+      background: black;
+      display: flex;
+      align-items: flex-start;
+      padding: 22px 32px 18px 32px;
+      box-sizing: border-box;
+      gap: 24px;
+    }
+
+    .site-name {
+      font-size: 1.1rem;
+      letter-spacing: 0.5px;
+      opacity: 0.95;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .site-name a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .nav {
+      display: flex;
+      gap: 28px;
+      margin-left: 60px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: white;
+      font-size: 0.95rem;
+      opacity: 0.78;
+      transition: opacity 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .nav a:hover {
+      opacity: 1;
+    }
+
+    .nav a.active {
+      opacity: 1;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      padding-bottom: 1px;
+    }
+
+    .page-body {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      padding: 0 32px;
+    }
+
+    .connect-block {
+      max-width: 520px;
+      margin: 0 auto;
+      padding: 60px 0;
+    }
+
+    .connect-label {
+      font-size: 0.75rem;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      opacity: 0.35;
+      margin-bottom: 40px;
+    }
+
+    .connect-line {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 1.15rem;
+      font-style: italic;
+      line-height: 1.7;
+      opacity: 0.72;
+      margin-bottom: 36px;
+    }
+
+    .connect-email {
+      display: inline-block;
+      font-size: 0.95rem;
+      color: white;
+      text-decoration: none;
+      letter-spacing: 0.3px;
+      opacity: 0.55;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      padding-bottom: 1px;
+      transition: opacity 0.2s ease, border-color 0.2s ease;
+    }
+
+    .connect-email:hover {
+      opacity: 1;
+      border-color: rgba(255, 255, 255, 0.55);
+    }
+
+    @media (max-width: 680px) {
+      .header {
+        flex-direction: column;
+        padding: 18px 20px 14px 20px;
+      }
+
+      .nav {
+        margin-left: 0;
+        flex-wrap: wrap;
+        gap: 14px 20px;
+      }
+
+      .page-body {
+        padding: 0 20px;
+        align-items: flex-start;
+      }
+
+      .connect-block {
+        padding: 52px 0 80px;
+      }
+
+      .connect-line {
+        font-size: 1.05rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="site-name"><a href="index.html">Yan Xiao</a></div>
+    <div class="nav">
+      <a href="me.html">Me, Myself and I</a>
+      <a href="write.html">I write</a>
+      <a href="think.html">I think</a>
+      <a href="teach.html">I teach</a>
+      <a href="connect.html" class="active">I connect</a>
+    </div>
+  </div>
+
+  <div class="page-body">
+    <div class="connect-block">
+      <div class="connect-label">I connect</div>
+      <p class="connect-line">If something here resonates, feel free to reach out.</p>
+      <a href="mailto:yan.xiao@stonybrook.edu" class="connect-email">yan.xiao@stonybrook.edu</a>
+    </div>
+  </div>
+
+</body>
+</html>
