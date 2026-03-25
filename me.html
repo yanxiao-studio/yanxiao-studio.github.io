@@ -2,7 +2,8 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Me</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Me, Myself and I — Yan Xiao</title>
 
   <style>
     body {
@@ -10,44 +11,123 @@
       font-family: Helvetica, Arial, sans-serif;
       background: black;
       color: white;
-      line-height: 1.8;
+    }
+
+    .header {
+      width: 100%;
+      background: black;
+      display: flex;
+      align-items: flex-start;
+      padding: 22px 32px 18px 32px;
+      box-sizing: border-box;
+      gap: 24px;
+    }
+
+    .site-name {
+      font-size: 1.1rem;
+      letter-spacing: 0.5px;
+      opacity: 0.95;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .site-name a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .nav {
+      display: flex;
+      gap: 28px;
+      margin-left: 60px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: white;
+      font-size: 0.95rem;
+      opacity: 0.78;
+      transition: opacity 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .nav a:hover {
+      opacity: 1;
+    }
+
+    .nav a.active {
+      opacity: 1;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      padding-bottom: 1px;
     }
 
     .container {
-      max-width: 700px;
-      margin: 120px auto;
-      padding: 0 20px;
+      max-width: 720px;
+      margin: 80px auto 140px;
+      padding: 0 32px;
+    }
+
+    .section-label {
+      font-size: 0.75rem;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      opacity: 0.35;
+      margin-bottom: 52px;
     }
 
     p {
-      font-size: 1.1rem;
-      opacity: 0.85;
-      margin-bottom: 24px;
+      font-size: 1rem;
+      line-height: 1.85;
+      opacity: 0.82;
+      margin: 0 0 22px 0;
+    }
+
+    @media (max-width: 680px) {
+      .header {
+        flex-direction: column;
+        padding: 18px 20px 14px 20px;
+      }
+
+      .nav {
+        margin-left: 0;
+        flex-wrap: wrap;
+        gap: 14px 20px;
+      }
+
+      .container {
+        margin: 52px auto 100px;
+        padding: 0 20px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-<div class="container">
+  <div class="header">
+    <div class="site-name"><a href="index.html">Yan Xiao</a></div>
+    <div class="nav">
+      <a href="me.html" class="active">Me, Myself and I</a>
+      <a href="write.html">I write</a>
+      <a href="think.html">I think</a>
+      <a href="teach.html">I teach</a>
+      <a href="connect.html">I connect</a>
+    </div>
+  </div>
 
-<p>
-Some questions are old. Who is the author? What counts as creation? Where does value come from? AI has made them urgent again.
-</p>
+  <div class="container">
 
-<p>
-I study these questions at the intersection of technology, culture, and imagination. Specifically, how artificial intelligence is reshaping the conditions under which creativity is recognized, attributed, and legitimized within cultural systems.
-</p>
+    <div class="section-label">Me</div>
 
-<p>
-I am a faculty member in the Department of Technology, AI, and Society at Stony Brook University. I received my Ph.D. from The Ohio State University, and have taught at Ohio State and Columbia University.
-</p>
+    <p>Some questions are old. Who is the author? What counts as creation? Where does value come from? AI has made them urgent again.</p>
 
-<p>
-Before entering academia, I worked in cultural institutions and the entertainment industry. Those were environments where the politics of creativity were never abstract: where decisions about whose work mattered, and why, had immediate consequences. That experience left me with questions that scholarship, I found, was the right tool to pursue.
-</p>
+    <p>I study these questions at the intersection of technology, culture, and imagination. Specifically, how artificial intelligence is reshaping the conditions under which creativity is recognized, attributed, and legitimized within cultural systems.</p>
 
-</div>
+    <p>I am a faculty member in the Department of Technology, AI, and Society at Stony Brook University. I received my Ph.D. from The Ohio State University, and have taught at Ohio State and Columbia University.</p>
+
+    <p>Before entering academia, I worked in cultural institutions and the entertainment industry. Those were environments where the politics of creativity were never abstract: where decisions about whose work mattered, and why, had immediate consequences. That experience left me with questions that scholarship, I found, was the right tool to pursue.</p>
+
+  </div>
 
 </body>
 </html>
