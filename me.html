@@ -55,6 +55,10 @@
       opacity: 1;
     }
 
+    .nav-short {
+      display: none;
+    }
+
     .nav a.active {
       opacity: 1;
       border-bottom: 1px solid rgba(255, 255, 255, 0.5);
@@ -91,7 +95,20 @@
       .nav {
         margin-left: 0;
         flex-wrap: wrap;
-        gap: 14px 20px;
+        gap: 11px 18px;
+      }
+
+      .nav a {
+        font-size: 0.875rem;
+        white-space: normal;
+      }
+
+      .nav-short {
+        display: inline;
+      }
+
+      .nav-full {
+        display: none;
       }
 
       .container {
@@ -107,7 +124,7 @@
   <div class="header">
     <div class="site-name"><a href="index.html">Yan Xiao</a></div>
     <div class="nav">
-      <a href="me.html" class="active">Me, Myself and I</a>
+      <a href="me.html" class="active"><span class="nav-full">Me, Myself and I</span><span class="nav-short">Me</span></a>
       <a href="write.html">I write</a>
       <a href="think.html">I think</a>
       <a href="teach.html">I teach</a>
