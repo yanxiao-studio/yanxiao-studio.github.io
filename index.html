@@ -31,6 +31,15 @@
       flex-shrink: 0;
     }
 
+    .tagline {
+      font-size: 0.85rem;
+      opacity: 0.5;
+      letter-spacing: 0.1px;
+      line-height: 1.4;
+      white-space: nowrap;
+      margin-top: 5px;
+    }
+
     .nav {
       display: flex;
       gap: 28px;
@@ -86,6 +95,10 @@
         display: none;
       }
 
+      .tagline {
+        white-space: normal;
+      }
+
       .hero {
         height: 65vh;
         opacity: 0.45;
@@ -97,7 +110,10 @@
 <body>
 
   <div class="header">
-    <div class="site-name">Yan Xiao</div>
+    <div>
+      <div class="site-name">Yan Xiao</div>
+      <div class="tagline">I study how AI systems shape what we can see, know, and recognize.</div>
+    </div>
 
     <div class="nav">
       <a href="me.html"><span class="nav-full">Me, Myself and I</span><span class="nav-short">Me</span></a>
